@@ -16,6 +16,6 @@ import java.util.Map;
 public class Global {
     public static List<Game> games = new ArrayList<>();
 
-    // <Invitee, Inviter>
-    public static Map<Player, Player> inviteRequest = new HashMap<>();
+    // <Invitee, Inviters>
+    public static Map<Player, ArrayList<Player>> inviteeAndInviters = new HashMap<>();
 }

@@ -45,7 +45,7 @@ public class DsCommand implements CommandExecutor, TabCompleter {
         }
         // denny
         if (args[0].equals(root.get(4))) {
-            return new InviteAction().run(sender, command, label, args);
+            return new DennyAction().run(sender, command, label, args);
         }
         // list
         if (args[0].equals(root.get(9))) {

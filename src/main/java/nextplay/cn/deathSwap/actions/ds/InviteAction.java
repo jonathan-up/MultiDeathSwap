@@ -14,6 +14,9 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Life was like a box of chocolates
  * you never know what you're going to get.
@@ -66,7 +69,10 @@ public class InviteAction implements Action {
                         .append(denny)
                         .create()
         );
-        Global.inviteRequest.put(target, player);
+
+        // 将邀请者放入邀请列表中
+        Global.inviteeAndInviters.computeIfAbsent(target, k -> new ArrayList<>());
+        Global.inviteeAndInviters.get(target).add(player);
 
         player.sendMessage(ChatColor.YELLOW + String.format("成功向%s发送游戏邀请", target.getName()));
         return true;
