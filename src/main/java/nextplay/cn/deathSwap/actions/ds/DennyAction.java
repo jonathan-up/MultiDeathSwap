@@ -1,16 +1,11 @@
 package nextplay.cn.deathSwap.actions.ds;
 
-import nextplay.cn.deathSwap.Game;
-import nextplay.cn.deathSwap.Global;
 import nextplay.cn.deathSwap.interfaces.Action;
-import nextplay.cn.deathSwap.utils.GameUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-
-import java.util.List;
 
 /**
  * Life was like a box of chocolates

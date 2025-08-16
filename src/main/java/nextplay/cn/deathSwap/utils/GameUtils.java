@@ -38,6 +38,7 @@ public class GameUtils {
         }
         return false;
     }
+
     public static boolean isPlayerInGame(Player player, Game game) {
         return game.getCreator() == player || game.getPlayer1() == player || game.getPlayer2() == player;
     }
@@ -51,8 +52,9 @@ public class GameUtils {
 
     /**
      * Make player quit from a game
+     *
      * @param player player
-     * @param game game
+     * @param game   game
      */
     public static void quit(Player player, Game game) {
         // 创建者退出: 删除游戏

@@ -59,10 +59,10 @@ public class QuitAction implements Action {
                         Global.games.remove(i);
                         creator.sendMessage("你创建的游戏房间被移除了!");
                         if (player1 != creator) {
-                            player1.sendMessage(ChatColor.YELLOW +"你退出了游戏房间 因为你所在的游戏房间被移除了!");
+                            player1.sendMessage(ChatColor.YELLOW + "你退出了游戏房间 因为你所在的游戏房间被移除了!");
                         }
                         if (player2 != creator) {
-                            player2.sendMessage(ChatColor.YELLOW +"你退出了游戏房间 因为你所在的游戏房间被移除了!");
+                            player2.sendMessage(ChatColor.YELLOW + "你退出了游戏房间 因为你所在的游戏房间被移除了!");
                         }
                     }
                 }
