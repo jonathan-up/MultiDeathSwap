@@ -1,0 +1,13 @@
+name: DeathSwap
+version: '1.0-SNAPSHOT'
+main: nextplay.cn.deathSwap.DeathSwap
+api-version: '1.20'
+prefix: DS
+authors: [H0meV]
+description: Mini game for minecraft
+website: www.next-play.cn
+
+commands:
+  ds:
+    description: swap game
+    usage: /ds
